@@ -92,84 +92,31 @@ body {
   .hidden-md {
     display: none;
   }
-
-  #numberFour {
-    animation-delay: 18s;
-    animation-duration: 4s;
-  }
 }
 
-#numberOne {
-  width: 100vw;
-  animation: comeFirst 6s linear;
-  animation-fill-mode: forwards;
-  position: absolute;
+.carousel-item {
+  height: 85vh;
 }
 
-#numberTwo {
-  visibility: hidden;
-  width: 100vw;
-  animation: comeFirst 6s linear;
-  animation-fill-mode: forwards;
-  animation-delay: 5s;
-  position: absolute;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  background-image: none;
 }
 
-#numberThree {
-  visibility: hidden;
-  animation: comeFirst 6s linear;
-  animation-fill-mode: forwards;
-  animation-delay: 10s;
-  position: absolute;
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 40px;
+  color: black;
 }
 
-#numberFour {
-  visibility: hidden;
-  min-width: 100vw;
-  animation: comeLast 4s linear;
-  animation-fill-mode: forwards;
-  animation-delay: 15s;
-  position: absolute;
-}
-
-@keyframes comeFirst {
-  0% {
-    visibility: visible;
-    left: 100%;
-  }
-  20% {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  75% {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  99% {
-    left: -80%;
-    visibility: hidden;
-  }
-  100% {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@keyframes comeLast {
-  0% {
-    visibility: visible;
-    left: 100%;
-  }
-  50% {
-    left: 50%;
-    transform: translateX(-50%);
-    visibility: visible;
-  }
-  100% {
-    left: 50%;
-    transform: translateX(-50%);
-    visibility: visible;
-  }
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 40px;
+  color: black;
 }
 
 @keyframes back {
@@ -195,6 +142,7 @@ body {
 /* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
+  text-decoration: none;
 }
 
 /* Set a specific color for each brand */
