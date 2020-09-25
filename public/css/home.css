@@ -172,3 +172,8 @@ body {
 .fa-whatsapp {
   background: #4AC959;
 }
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
